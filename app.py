@@ -7,5 +7,9 @@ app.config['TESTING'] = True
 def hello_world():
     return "<p>Hello, !</p>"
 
+@app.route("/hello")
+def hello_world1():
+    return "<p>Hello, !</p>"
+
 if __name__ == "__main__":
     app.run(debug=True)
